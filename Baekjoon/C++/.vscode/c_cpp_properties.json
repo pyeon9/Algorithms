@@ -2,18 +2,26 @@
     "configurations": [
         {
             "name": "Win32",
+            //추가로 사용할 헤더파일 경로
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "E:/MinGW/include"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+            "windowsSdkVersion": "10.0.18362.0",
+            //컴파일러 경로 mingw의 g++로 변경해주자.
+            // "compilerPath": "D:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx64/x64/cl.exe",
+            "compilerPath": "E:/MinGW/bin/g++.exe",
+            //C와 C++표준
             "cStandard": "gnu11",
             "cppStandard": "gnu++14",
-            "intelliSenseMode": "windows-gcc-x86"
+            //인텔리센스도 gcc로 windows-gcc-x64
+            // "intelliSenseMode": "windows-msvc-x64"
+            "intelliSenseMode": "windows-gcc-x64"
         }
     ],
     "version": 4
